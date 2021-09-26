@@ -1,0 +1,38 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.alert {
+	@include font-defaults;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	word-wrap: break-word;
+	line-height: 1.5715;
+	border-radius: 2px;
+	position: relative;
+	padding: 8px 15px;
+	list-style: none;
+	font-size: 14px;
+	margin: 0;
+
+	color: $harvey-green;
+
+	&.success {
+		background-color: #f6ffed;
+		border-color: #b7eb8f;
+	}
+	&.info {
+		background-color: #e6f7ff;
+		border-color: #91d5ff;
+		color: #1890ff;
+	}
+	&.warning {
+		background-color: #fffbe6;
+		border-color: #ffe58f;
+	}
+	&.error {
+		background-color: #fff2f0;
+		border-color: #ffccc7;
+	}
+}

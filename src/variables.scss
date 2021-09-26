@@ -1,0 +1,23 @@
+// Variables
+$harvey-black: #131111;
+$harvey-white: #e0e0e0;
+$harvey-red: #ff2323;
+$harvey-green: #005f20;
+$harvey-blue: #070bce;
+
+:root {
+	--background: #fff;
+	--font-color: #494949;
+
+	--primary-color: #1890ff;
+	--primary-color-hover: #40a9ff;
+	--primary-color-active: #096dd9;
+	--primary-color-outline: rgba(24, 144, 255, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #3c3c3c;
+		--font-color: #fafafa;
+	}
+}

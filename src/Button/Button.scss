@@ -1,0 +1,44 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.button {
+	@include font-defaults;
+	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	touch-action: manipulation;
+	user-select: none;
+	color: $harvey-green;
+
+	border: 1px solid transparent;
+	display: inline-block;
+	line-height: 1.5715;
+	white-space: nowrap;
+	border-radius: 2px;
+	padding: 4px 15px;
+	position: relative;
+	text-align: center;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 14px;
+	height: 32px;
+
+	&.primary {
+		color: #fff;
+		border-color: var(--primary-color);
+		background: var(--primary-color);
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+		box-shadow: 0 2px #0000000b;
+		&:hover {
+			background-color: var(--primary-color-hover);
+		}
+		&:active {
+			background-color: var(--primary-color-active);
+		}
+	}
+	&.dashed {
+		color: #000000d9;
+		border-style: dashed;
+		border-color: #d9d9d9;
+		background: #fff;
+	}
+}
